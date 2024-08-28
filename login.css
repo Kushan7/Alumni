@@ -1,0 +1,93 @@
+/* Reset some basic elements for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form h2 {
+    color: #004d40;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #004d40;
+    outline: none;
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    background: #004d40;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background: #00332a;
+}
+
+.signup-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-text a {
+    color: #004d40;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.signup-text a:hover {
+    color: #00332a;
+}
