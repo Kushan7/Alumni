@@ -1,0 +1,139 @@
+/* Enhanced styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f1;
+    color: #333;
+    line-height: 1.6;
+    /* Ensure good readability */
+}
+
+header {
+    background-color: #004d40;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 1px;
+    /* Increase font size and spacing */
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2.5em;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2.5em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Add hover effect for interactivity */
+}
+
+h2 {
+    margin-top: 0;
+    color: #004d40;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 0.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1em;
+    font-weight: bold;
+    color: #004d40;
+    font-size: 1.1em;
+}
+
+input,
+textarea,
+select {
+    margin-top: 0.5em;
+    padding: 0.75em;
+    border: 2px solid #004d40;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #e0f7fa;
+    border-color: #00796b;
+    outline: none;
+}
+
+button {
+    padding: 0.75em;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #00796b;
+    transform: translateY(-2px);
+}
+
+#search-filters form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#search-filters label,
+#search-filters input,
+#search-filters select {
+    flex: 1;
+    min-width: 200px;
+}
+
+#job-listings .job {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#job-listings .job:last-child {
+    border-bottom: none;
+}
+
+.job {
+    border: 1px solid #004d40;
+    border-radius: 8px;
+    padding: 1.5em;
+    background-color: #fafafa;
+    margin-bottom: 1.5em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.job:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
