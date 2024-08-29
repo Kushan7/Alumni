@@ -24,7 +24,7 @@
     </header>
 
     <main id="home">
-        <section class="hero">
+        <section class="hero" >
             <div class="hero-content">
                 <h1>Welcome to the Alumni Association</h1>
                 <p>Celebrating the achievements and memories of our alumni.</p>
@@ -69,6 +69,47 @@
     <footer>
         <p>&copy; 2024 Alumni Association. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const heading = document.querySelector('.hero-content h1');
+            const text = heading.textContent;
+            heading.textContent = '';
+            let index = 0;
+        
+            function typeWriter() {
+                if (index < text.length) {
+                    heading.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 100); // Adjust speed by changing the timeout value
+                }
+            }
+        
+            typeWriter();
+        });
+        </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navItems = document.querySelectorAll('nav ul li');
+    
+        navItems.forEach((item, index) => {
+            item.style.opacity = 0;
+            item.style.transform = 'translateX(-30px)';
+    
+            setTimeout(() => {
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                item.style.opacity = 1;
+                item.style.transform = 'translateX(0)';
+            }, 100 * index); // Delay each item by 100ms to create a staggered effect
+        });
+    });
+    </script>
+    
+        
+
+
+
 </body>
 
 </html>
